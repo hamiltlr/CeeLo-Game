@@ -1,0 +1,69 @@
+/* 
+    Document   : style
+    Created on : Oct 16, 2013, 11:54:52 AM
+    Author     : Josiah, Lee
+*/
+
+/* Change Log */
+/*
+ * 10/17/13 9:30AM Lee - Removed display:block and added some spacing, added bold style to p1
+ * 10/28/13 6:00PM Lee/Josiah - Improved button
+ */
+
+.root {
+    -fx-background-image: url("background.png");
+    -fx-background-size: 425.0px 350.0px;
+    -fx-spacing: 20.0;
+}
+
+#textBox{
+    -fx-spacing: 15.0;
+}
+
+#boxPlayers{
+    -fx-spacing: 40.0;
+}
+
+#boxPlayers #p1Label{
+    -fx-font-weight: bold;
+    -fx-font-size: 20.0; /* For some reason this doesn't work... */
+}
+
+#boxDice{
+    -fx-spacing: 20.0;
+}
+
+.text{
+    -fx-fill: white;
+    -fx-font-size: 15.0;
+    -fx-text-alignment: center;
+}
+
+.button .text{
+    -fx-fill: black;
+}
+
+.button {
+    -fx-background-color: 
+        #707070,
+        linear-gradient(#fcfcfc, #f3f3f3),
+        linear-gradient(#f2f2f2 0.0%, #ebebeb 49.0%, #dddddd 50.0%, #cfcfcf 100.0%);
+    -fx-background-insets: 0.0,1.0,2.0;
+    -fx-background-radius: 3.0,2.0,1.0;
+    -fx-padding: 3.0 30.0 3.0 30.0;
+    -fx-text-fill: black;   
+}
+
+.button:hover{
+    -fx-background-color: 
+        #3c7fb1,
+        linear-gradient(#ebf5fc 0.0%, #d9f0fc 49.0%, #bee6fd 50.0%, #b8ddf2 100.0%);
+    -fx-border-width: 2.0px;
+    -fx-border-style: solid;
+    -fx-border-color: #30d5fe;
+    -fx-border-insets: 0.0,1.0,2.0;
+    -fx-border-radius: 3.0,2.0,1.0;
+}
+
+
+
